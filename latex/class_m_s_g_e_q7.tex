@@ -1,0 +1,53 @@
+\hypertarget{class_m_s_g_e_q7}{}\doxysection{MSGEQ7 Class Reference}
+\label{class_m_s_g_e_q7}\index{MSGEQ7@{MSGEQ7}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_m_s_g_e_q7_ac66a3edf3a2e4685847dd0249b9d2740}{MSGEQ7}} (hwlib\+::target\+::pins strobe, hwlib\+::target\+::pins reset, hwlib\+::target\+::ad\+\_\+pins out)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_m_s_g_e_q7}{MSGEQ7}} constructor. \end{DoxyCompactList}\item 
+int $\ast$ \mbox{\hyperlink{class_m_s_g_e_q7_a13071f8638ccd1fe5ecf1bddcb15b201}{get\+Amplitude}} (int devider)
+\begin{DoxyCompactList}\small\item\em get\+Amplitude function \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_m_s_g_e_q7_a07f6a5ac4e97dcadf10bd0baff8d993e}{equalize}} (int devider, \mbox{\hyperlink{classstrip}{strip}} led0, \mbox{\hyperlink{classstrip}{strip}} led1, \mbox{\hyperlink{classstrip}{strip}} led2, \mbox{\hyperlink{classstrip}{strip}} led3, \mbox{\hyperlink{classstrip}{strip}} led4, \mbox{\hyperlink{classstrip}{strip}} led5, \mbox{\hyperlink{classstrip}{strip}} led6)
+\begin{DoxyCompactList}\small\item\em equalize function \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_m_s_g_e_q7_ac66a3edf3a2e4685847dd0249b9d2740}\label{class_m_s_g_e_q7_ac66a3edf3a2e4685847dd0249b9d2740}} 
+\index{MSGEQ7@{MSGEQ7}!MSGEQ7@{MSGEQ7}}
+\index{MSGEQ7@{MSGEQ7}!MSGEQ7@{MSGEQ7}}
+\doxysubsubsection{\texorpdfstring{MSGEQ7()}{MSGEQ7()}}
+{\footnotesize\ttfamily MSGEQ7\+::\+MSGEQ7 (\begin{DoxyParamCaption}\item[{hwlib\+::target\+::pins}]{strobe,  }\item[{hwlib\+::target\+::pins}]{reset,  }\item[{hwlib\+::target\+::ad\+\_\+pins}]{out }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_m_s_g_e_q7}{MSGEQ7}} constructor. 
+
+Constructor for the class \mbox{\hyperlink{class_m_s_g_e_q7}{MSGEQ7}}. The parameters are the strobe pin number, reset pin number and the out pin number. The \textquotesingle{}strobe\textquotesingle{} and \textquotesingle{}reset\textquotesingle{} pins are both digital out pins. the \textquotesingle{}out\textquotesingle{} pin is a analog read pin. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_m_s_g_e_q7_a07f6a5ac4e97dcadf10bd0baff8d993e}\label{class_m_s_g_e_q7_a07f6a5ac4e97dcadf10bd0baff8d993e}} 
+\index{MSGEQ7@{MSGEQ7}!equalize@{equalize}}
+\index{equalize@{equalize}!MSGEQ7@{MSGEQ7}}
+\doxysubsubsection{\texorpdfstring{equalize()}{equalize()}}
+{\footnotesize\ttfamily void MSGEQ7\+::equalize (\begin{DoxyParamCaption}\item[{int}]{devider,  }\item[{\mbox{\hyperlink{classstrip}{strip}}}]{led0,  }\item[{\mbox{\hyperlink{classstrip}{strip}}}]{led1,  }\item[{\mbox{\hyperlink{classstrip}{strip}}}]{led2,  }\item[{\mbox{\hyperlink{classstrip}{strip}}}]{led3,  }\item[{\mbox{\hyperlink{classstrip}{strip}}}]{led4,  }\item[{\mbox{\hyperlink{classstrip}{strip}}}]{led5,  }\item[{\mbox{\hyperlink{classstrip}{strip}}}]{led6 }\end{DoxyParamCaption})}
+
+
+
+equalize function 
+
+This function is the main loop of the program. In this function the \textquotesingle{}\mbox{\hyperlink{class_m_s_g_e_q7_a13071f8638ccd1fe5ecf1bddcb15b201}{get\+Amplitude()}}\textquotesingle{} get called and the integers in the array are given to the correct LED strip. \mbox{\Hypertarget{class_m_s_g_e_q7_a13071f8638ccd1fe5ecf1bddcb15b201}\label{class_m_s_g_e_q7_a13071f8638ccd1fe5ecf1bddcb15b201}} 
+\index{MSGEQ7@{MSGEQ7}!getAmplitude@{getAmplitude}}
+\index{getAmplitude@{getAmplitude}!MSGEQ7@{MSGEQ7}}
+\doxysubsubsection{\texorpdfstring{getAmplitude()}{getAmplitude()}}
+{\footnotesize\ttfamily int $\ast$ MSGEQ7\+::get\+Amplitude (\begin{DoxyParamCaption}\item[{int}]{devider }\end{DoxyParamCaption})}
+
+
+
+get\+Amplitude function 
+
+This function returns an array of integers from 0 to 8. The first integer is the first frequency band. The values are divided by the \textquotesingle{}devider\textquotesingle{} parameter (usually 500) so the max readings are around 8 and the lowest readings are 0. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_m_s_g_e_q7_8hpp}{MSGEQ7.\+hpp}}\item 
+MSGEQ7.\+cpp\end{DoxyCompactItemize}

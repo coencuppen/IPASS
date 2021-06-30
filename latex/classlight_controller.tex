@@ -1,0 +1,140 @@
+\hypertarget{classlight_controller}{}\doxysection{light\+Controller Class Reference}
+\label{classlight_controller}\index{lightController@{lightController}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classlight_controller_a7515b95c0e838e8b9e99def0e7c4387a}{light\+Controller}} (int mode, uint8\+\_\+t brightness, uint8\+\_\+t red, uint8\+\_\+t green, uint8\+\_\+t blue)
+\begin{DoxyCompactList}\small\item\em Light\+\_\+controller constructor. \end{DoxyCompactList}\item 
+const int \mbox{\hyperlink{classlight_controller_a4b701715c1d0e1b716a2003b502a8846}{get\+Mode}} ()
+\begin{DoxyCompactList}\small\item\em Returning \textquotesingle{}mode\textquotesingle{} from private. \end{DoxyCompactList}\item 
+const bool $\ast$ \mbox{\hyperlink{classlight_controller_a4594804a341195c46d7d9e42bb0fb81c}{get\+Brightness}} ()
+\begin{DoxyCompactList}\small\item\em Returning \textquotesingle{}brightness\textquotesingle{} from private. \end{DoxyCompactList}\item 
+const bool $\ast$ \mbox{\hyperlink{classlight_controller_a37499ddf4e47bf56c6bcb4db58bfc1cc}{get\+Red}} ()
+\begin{DoxyCompactList}\small\item\em Returning \textquotesingle{}red\textquotesingle{} from private. \end{DoxyCompactList}\item 
+const bool $\ast$ \mbox{\hyperlink{classlight_controller_a7841a4bab743419af555c9b666b91f21}{get\+Green}} ()
+\begin{DoxyCompactList}\small\item\em Returning \textquotesingle{}green\textquotesingle{} from private. \end{DoxyCompactList}\item 
+const bool $\ast$ \mbox{\hyperlink{classlight_controller_a6771e98bb2f6b0ec5c1e3c6552d3e6b4}{get\+Blue}} ()
+\begin{DoxyCompactList}\small\item\em Returning \textquotesingle{}blue\textquotesingle{} from private. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool $\ast$ \mbox{\hyperlink{classlight_controller_a4ab389e9caa4f69319f6e69e3dbc3937}{set\+Array\+Brightness}} (uint8\+\_\+t byte)
+\begin{DoxyCompactList}\small\item\em Setting the brightness. \end{DoxyCompactList}\item 
+static bool $\ast$ \mbox{\hyperlink{classlight_controller_a58b76432aa3401f4deed8863082045ce}{set\+Array\+Red}} (uint8\+\_\+t byte)
+\begin{DoxyCompactList}\small\item\em Setting the color red. \end{DoxyCompactList}\item 
+static bool $\ast$ \mbox{\hyperlink{classlight_controller_a50d00f241e1e6a59cb12abd609b2cf51}{set\+Array\+Green}} (uint8\+\_\+t byte)
+\begin{DoxyCompactList}\small\item\em Setting the color green. \end{DoxyCompactList}\item 
+static bool $\ast$ \mbox{\hyperlink{classlight_controller_a6ded9bdd6a76b062cce480f9125771c6}{set\+Array\+Blue}} (uint8\+\_\+t byte)
+\begin{DoxyCompactList}\small\item\em Setting the color blue. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classlight_controller_a7515b95c0e838e8b9e99def0e7c4387a}\label{classlight_controller_a7515b95c0e838e8b9e99def0e7c4387a}} 
+\index{lightController@{lightController}!lightController@{lightController}}
+\index{lightController@{lightController}!lightController@{lightController}}
+\doxysubsubsection{\texorpdfstring{lightController()}{lightController()}}
+{\footnotesize\ttfamily light\+Controller\+::light\+Controller (\begin{DoxyParamCaption}\item[{int}]{mode,  }\item[{uint8\+\_\+t}]{brightness,  }\item[{uint8\+\_\+t}]{red,  }\item[{uint8\+\_\+t}]{green,  }\item[{uint8\+\_\+t}]{blue }\end{DoxyParamCaption})}
+
+
+
+Light\+\_\+controller constructor. 
+
+This constructor initializes the mode, brightness level and the color the LEDstrips should have. The mode should be an integer 1, 2 or 3. The brightness should be an 8 bit integer in the range 0 and 31. The colors should be an 8 bit integer in the range of 0 and 255. Only the \textquotesingle{}mode\textquotesingle{} will be directly added to the private. The brightness and the colors will first be converted to arrays. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classlight_controller_a6771e98bb2f6b0ec5c1e3c6552d3e6b4}\label{classlight_controller_a6771e98bb2f6b0ec5c1e3c6552d3e6b4}} 
+\index{lightController@{lightController}!getBlue@{getBlue}}
+\index{getBlue@{getBlue}!lightController@{lightController}}
+\doxysubsubsection{\texorpdfstring{getBlue()}{getBlue()}}
+{\footnotesize\ttfamily const bool $\ast$ light\+Controller\+::get\+Blue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returning \textquotesingle{}blue\textquotesingle{} from private. 
+
+This function returns \textquotesingle{}{\itshape blue\textquotesingle{} from private as a const bool}. \mbox{\Hypertarget{classlight_controller_a4594804a341195c46d7d9e42bb0fb81c}\label{classlight_controller_a4594804a341195c46d7d9e42bb0fb81c}} 
+\index{lightController@{lightController}!getBrightness@{getBrightness}}
+\index{getBrightness@{getBrightness}!lightController@{lightController}}
+\doxysubsubsection{\texorpdfstring{getBrightness()}{getBrightness()}}
+{\footnotesize\ttfamily const bool $\ast$ light\+Controller\+::get\+Brightness (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returning \textquotesingle{}brightness\textquotesingle{} from private. 
+
+This function returns \textquotesingle{}{\itshape brightness\textquotesingle{} from private as a const bool}. \mbox{\Hypertarget{classlight_controller_a7841a4bab743419af555c9b666b91f21}\label{classlight_controller_a7841a4bab743419af555c9b666b91f21}} 
+\index{lightController@{lightController}!getGreen@{getGreen}}
+\index{getGreen@{getGreen}!lightController@{lightController}}
+\doxysubsubsection{\texorpdfstring{getGreen()}{getGreen()}}
+{\footnotesize\ttfamily const bool $\ast$ light\+Controller\+::get\+Green (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returning \textquotesingle{}green\textquotesingle{} from private. 
+
+This function returns \textquotesingle{}{\itshape green\textquotesingle{} from private as a const bool}. \mbox{\Hypertarget{classlight_controller_a4b701715c1d0e1b716a2003b502a8846}\label{classlight_controller_a4b701715c1d0e1b716a2003b502a8846}} 
+\index{lightController@{lightController}!getMode@{getMode}}
+\index{getMode@{getMode}!lightController@{lightController}}
+\doxysubsubsection{\texorpdfstring{getMode()}{getMode()}}
+{\footnotesize\ttfamily const int light\+Controller\+::get\+Mode (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returning \textquotesingle{}mode\textquotesingle{} from private. 
+
+This function returns \textquotesingle{}mode\textquotesingle{} from private as a const int . \mbox{\Hypertarget{classlight_controller_a37499ddf4e47bf56c6bcb4db58bfc1cc}\label{classlight_controller_a37499ddf4e47bf56c6bcb4db58bfc1cc}} 
+\index{lightController@{lightController}!getRed@{getRed}}
+\index{getRed@{getRed}!lightController@{lightController}}
+\doxysubsubsection{\texorpdfstring{getRed()}{getRed()}}
+{\footnotesize\ttfamily const bool $\ast$ light\+Controller\+::get\+Red (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returning \textquotesingle{}red\textquotesingle{} from private. 
+
+This function returns \textquotesingle{}{\itshape red\textquotesingle{} from private as a const bool}. \mbox{\Hypertarget{classlight_controller_a6ded9bdd6a76b062cce480f9125771c6}\label{classlight_controller_a6ded9bdd6a76b062cce480f9125771c6}} 
+\index{lightController@{lightController}!setArrayBlue@{setArrayBlue}}
+\index{setArrayBlue@{setArrayBlue}!lightController@{lightController}}
+\doxysubsubsection{\texorpdfstring{setArrayBlue()}{setArrayBlue()}}
+{\footnotesize\ttfamily bool $\ast$ light\+Controller\+::set\+Array\+Blue (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{byte }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Setting the color blue. 
+
+This function converts an 8 bit integer to an array of boleans. \mbox{\Hypertarget{classlight_controller_a4ab389e9caa4f69319f6e69e3dbc3937}\label{classlight_controller_a4ab389e9caa4f69319f6e69e3dbc3937}} 
+\index{lightController@{lightController}!setArrayBrightness@{setArrayBrightness}}
+\index{setArrayBrightness@{setArrayBrightness}!lightController@{lightController}}
+\doxysubsubsection{\texorpdfstring{setArrayBrightness()}{setArrayBrightness()}}
+{\footnotesize\ttfamily bool $\ast$ light\+Controller\+::set\+Array\+Brightness (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{byte }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Setting the brightness. 
+
+This function converts an 8 bit integer to an array of boleans. The firs 3 bits are automatic \textquotesingle{}1\textquotesingle{}. The last 5 bits variable. \mbox{\Hypertarget{classlight_controller_a50d00f241e1e6a59cb12abd609b2cf51}\label{classlight_controller_a50d00f241e1e6a59cb12abd609b2cf51}} 
+\index{lightController@{lightController}!setArrayGreen@{setArrayGreen}}
+\index{setArrayGreen@{setArrayGreen}!lightController@{lightController}}
+\doxysubsubsection{\texorpdfstring{setArrayGreen()}{setArrayGreen()}}
+{\footnotesize\ttfamily bool $\ast$ light\+Controller\+::set\+Array\+Green (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{byte }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Setting the color green. 
+
+This function converts an 8 bit integer to an array of boleans. \mbox{\Hypertarget{classlight_controller_a58b76432aa3401f4deed8863082045ce}\label{classlight_controller_a58b76432aa3401f4deed8863082045ce}} 
+\index{lightController@{lightController}!setArrayRed@{setArrayRed}}
+\index{setArrayRed@{setArrayRed}!lightController@{lightController}}
+\doxysubsubsection{\texorpdfstring{setArrayRed()}{setArrayRed()}}
+{\footnotesize\ttfamily bool $\ast$ light\+Controller\+::set\+Array\+Red (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{byte }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Setting the color red. 
+
+This function converts an 8 bit integer to an array of boleans. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{light_controller_8hpp}{light\+Controller.\+hpp}}\item 
+light\+Controller.\+cpp\end{DoxyCompactItemize}

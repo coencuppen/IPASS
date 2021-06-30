@@ -1,0 +1,79 @@
+\hypertarget{classstrip}{}\doxysection{strip Class Reference}
+\label{classstrip}\index{strip@{strip}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classstrip_a759f41b3d0820e05f1f2fbfc4a41d8f3}{strip}} (\mbox{\hyperlink{classlight_controller}{light\+Controller}} \mbox{\hyperlink{classlight_controller}{light\+Controller}}, hwlib\+::target\+::pins data\+Pin\+Number, hwlib\+::target\+::pins clock\+Pin\+Number)
+\begin{DoxyCompactList}\small\item\em Strip constructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classstrip_aa1e03c218989d43d6d8b53fe58f19cb9}{send\+Bytes}} (const bool $\ast$bytes)
+\begin{DoxyCompactList}\small\item\em send\+Bytes function \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classstrip_ab2fe9b2a95ee5009caf29a34e5cf30e7}{led\+Strip}} (int leds)
+\begin{DoxyCompactList}\small\item\em led\+Strip function \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classstrip_a4f9cd0d264ef1e1e246e1c3c90369968}{led\+Off}} ()
+\begin{DoxyCompactList}\small\item\em led\+Off function \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classstrip_ac09840d64d62ffc37a8687330a552e31}\label{classstrip_ac09840d64d62ffc37a8687330a552e31}} 
+bool {\bfseries bytes0} \mbox{[}8\mbox{]} = \{0, 0, 0, 0, 0, 0, 0, 0\}
+\item 
+\mbox{\Hypertarget{classstrip_ae07351b6a87c613774fa89a6eb4d224d}\label{classstrip_ae07351b6a87c613774fa89a6eb4d224d}} 
+bool {\bfseries bytes1} \mbox{[}8\mbox{]} = \{1, 1, 1, 1, 1, 1, 1, 1\}
+\item 
+\mbox{\Hypertarget{classstrip_af390861a8f8df737dba82c49c985f84f}\label{classstrip_af390861a8f8df737dba82c49c985f84f}} 
+bool {\bfseries brightness0} \mbox{[}8\mbox{]} = \{1, 1, 1, 0, 0, 0, 0, 0\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classstrip_a759f41b3d0820e05f1f2fbfc4a41d8f3}\label{classstrip_a759f41b3d0820e05f1f2fbfc4a41d8f3}} 
+\index{strip@{strip}!strip@{strip}}
+\index{strip@{strip}!strip@{strip}}
+\doxysubsubsection{\texorpdfstring{strip()}{strip()}}
+{\footnotesize\ttfamily strip\+::strip (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classlight_controller}{light\+Controller}}}]{light\+Controller,  }\item[{hwlib\+::target\+::pins}]{data\+Pin\+Number,  }\item[{hwlib\+::target\+::pins}]{clock\+Pin\+Number }\end{DoxyParamCaption})}
+
+
+
+Strip constructor. 
+
+This is the constructor from the strip class. The parameters are the lightcontroller class, the data pin number of a LED strip and de clock pin number of a LED strip. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classstrip_a4f9cd0d264ef1e1e246e1c3c90369968}\label{classstrip_a4f9cd0d264ef1e1e246e1c3c90369968}} 
+\index{strip@{strip}!ledOff@{ledOff}}
+\index{ledOff@{ledOff}!strip@{strip}}
+\doxysubsubsection{\texorpdfstring{ledOff()}{ledOff()}}
+{\footnotesize\ttfamily void strip\+::led\+Off (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+led\+Off function 
+
+This function turns off all the LED\textquotesingle{}s of a LED strip. The function is similar to the \textquotesingle{}led\+Strip\textquotesingle{} function, but it writes only arrays of 0\textquotesingle{}s where normally the color is written. \mbox{\Hypertarget{classstrip_ab2fe9b2a95ee5009caf29a34e5cf30e7}\label{classstrip_ab2fe9b2a95ee5009caf29a34e5cf30e7}} 
+\index{strip@{strip}!ledStrip@{ledStrip}}
+\index{ledStrip@{ledStrip}!strip@{strip}}
+\doxysubsubsection{\texorpdfstring{ledStrip()}{ledStrip()}}
+{\footnotesize\ttfamily void strip\+::led\+Strip (\begin{DoxyParamCaption}\item[{int}]{leds }\end{DoxyParamCaption})}
+
+
+
+led\+Strip function 
+
+This function manages with the parameter \textquotesingle{}leds\textquotesingle{} which LED\textquotesingle{}s should be on. It also manages the color of the LED\textquotesingle{}s. Firs the function turns all the LED\textquotesingle{}s of with the \mbox{\hyperlink{classstrip_a4f9cd0d264ef1e1e246e1c3c90369968}{led\+Off()}} function. The function reads the mode that has been given to the \mbox{\hyperlink{classlight_controller}{light\+Controller}} class. If the mode is 1 the first 5 LED\textquotesingle{}s are green, the 6 and 7th LED are yellow and the 8th LED is red. If the mode is 2 the first 5 LED\textquotesingle{}s are green, the 6 and 7th LED are yellow and changes the first 5 LEDS to yellow. The 8th LED turns all LED\textquotesingle{}s to red.
+
+The apa102 LED strip has a protocol to write the amount of LED\textquotesingle{}s and the color. First the function writes 4 bytes whith only 0\textquotesingle{}s, so the LED strip will listen. Then it writes the brightness byte and the colors in the order blue green red. It repeat the last stap for the amount of LED\textquotesingle{}s it has to turn on. When it\textquotesingle{}s done it writes a byte of only 1\textquotesingle{}s so the LED strip stops listening. \mbox{\Hypertarget{classstrip_aa1e03c218989d43d6d8b53fe58f19cb9}\label{classstrip_aa1e03c218989d43d6d8b53fe58f19cb9}} 
+\index{strip@{strip}!sendBytes@{sendBytes}}
+\index{sendBytes@{sendBytes}!strip@{strip}}
+\doxysubsubsection{\texorpdfstring{sendBytes()}{sendBytes()}}
+{\footnotesize\ttfamily void strip\+::send\+Bytes (\begin{DoxyParamCaption}\item[{const bool $\ast$}]{bytes }\end{DoxyParamCaption})}
+
+
+
+send\+Bytes function 
+
+This function converts all 8 bit boolean arrays to electrical pulses. If the boolean is 1 the clock and data pin will pulse. if the boolean is 0 only the clock pin will pulse 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{strip_8hpp}{strip.\+hpp}}\item 
+strip.\+cpp\end{DoxyCompactItemize}
