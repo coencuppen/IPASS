@@ -5,5 +5,6 @@ var searchData=
   ['getbrightness_30',['getBrightness',['../classlight_controller.html#a4594804a341195c46d7d9e42bb0fb81c',1,'lightController']]],
   ['getgreen_31',['getGreen',['../classlight_controller.html#a7841a4bab743419af555c9b666b91f21',1,'lightController']]],
   ['getmode_32',['getMode',['../classlight_controller.html#a4b701715c1d0e1b716a2003b502a8846',1,'lightController']]],
-  ['getred_33',['getRed',['../classlight_controller.html#a37499ddf4e47bf56c6bcb4db58bfc1cc',1,'lightController']]]
+  ['getnumberofleds_33',['getNumberOfLeds',['../classlight_controller.html#acb573720dc87a6ac356a5173f784cc45',1,'lightController']]],
+  ['getred_34',['getRed',['../classlight_controller.html#a37499ddf4e47bf56c6bcb4db58bfc1cc',1,'lightController']]]
 ];

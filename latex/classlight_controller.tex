@@ -3,10 +3,12 @@
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classlight_controller_a7515b95c0e838e8b9e99def0e7c4387a}{light\+Controller}} (int mode, uint8\+\_\+t brightness, uint8\+\_\+t red, uint8\+\_\+t green, uint8\+\_\+t blue)
+\mbox{\hyperlink{classlight_controller_a9076da96dfdcfd4cc1a46d36c474d546}{light\+Controller}} (int mode, int number\+Of\+Leds, uint8\+\_\+t brightness, uint8\+\_\+t red, uint8\+\_\+t green, uint8\+\_\+t blue)
 \begin{DoxyCompactList}\small\item\em Light\+\_\+controller constructor. \end{DoxyCompactList}\item 
 const int \mbox{\hyperlink{classlight_controller_a4b701715c1d0e1b716a2003b502a8846}{get\+Mode}} ()
 \begin{DoxyCompactList}\small\item\em Returning \textquotesingle{}mode\textquotesingle{} from private. \end{DoxyCompactList}\item 
+const int \mbox{\hyperlink{classlight_controller_acb573720dc87a6ac356a5173f784cc45}{get\+Number\+Of\+Leds}} ()
+\begin{DoxyCompactList}\small\item\em Returning \textquotesingle{}number\+Of\+Leds\textquotesingle{}. \end{DoxyCompactList}\item 
 const bool $\ast$ \mbox{\hyperlink{classlight_controller_a4594804a341195c46d7d9e42bb0fb81c}{get\+Brightness}} ()
 \begin{DoxyCompactList}\small\item\em Returning \textquotesingle{}brightness\textquotesingle{} from private. \end{DoxyCompactList}\item 
 const bool $\ast$ \mbox{\hyperlink{classlight_controller_a37499ddf4e47bf56c6bcb4db58bfc1cc}{get\+Red}} ()
@@ -29,11 +31,11 @@ static bool $\ast$ \mbox{\hyperlink{classlight_controller_a6ded9bdd6a76b062cce48
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classlight_controller_a7515b95c0e838e8b9e99def0e7c4387a}\label{classlight_controller_a7515b95c0e838e8b9e99def0e7c4387a}} 
+\mbox{\Hypertarget{classlight_controller_a9076da96dfdcfd4cc1a46d36c474d546}\label{classlight_controller_a9076da96dfdcfd4cc1a46d36c474d546}} 
 \index{lightController@{lightController}!lightController@{lightController}}
 \index{lightController@{lightController}!lightController@{lightController}}
 \doxysubsubsection{\texorpdfstring{lightController()}{lightController()}}
-{\footnotesize\ttfamily light\+Controller\+::light\+Controller (\begin{DoxyParamCaption}\item[{int}]{mode,  }\item[{uint8\+\_\+t}]{brightness,  }\item[{uint8\+\_\+t}]{red,  }\item[{uint8\+\_\+t}]{green,  }\item[{uint8\+\_\+t}]{blue }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily light\+Controller\+::light\+Controller (\begin{DoxyParamCaption}\item[{int}]{mode,  }\item[{int}]{number\+Of\+Leds,  }\item[{uint8\+\_\+t}]{brightness,  }\item[{uint8\+\_\+t}]{red,  }\item[{uint8\+\_\+t}]{green,  }\item[{uint8\+\_\+t}]{blue }\end{DoxyParamCaption})}
 
 
 
@@ -82,7 +84,17 @@ This function returns \textquotesingle{}{\itshape green\textquotesingle{} from p
 
 Returning \textquotesingle{}mode\textquotesingle{} from private. 
 
-This function returns \textquotesingle{}mode\textquotesingle{} from private as a const int . \mbox{\Hypertarget{classlight_controller_a37499ddf4e47bf56c6bcb4db58bfc1cc}\label{classlight_controller_a37499ddf4e47bf56c6bcb4db58bfc1cc}} 
+This function returns \textquotesingle{}mode\textquotesingle{} from private as a const int . \mbox{\Hypertarget{classlight_controller_acb573720dc87a6ac356a5173f784cc45}\label{classlight_controller_acb573720dc87a6ac356a5173f784cc45}} 
+\index{lightController@{lightController}!getNumberOfLeds@{getNumberOfLeds}}
+\index{getNumberOfLeds@{getNumberOfLeds}!lightController@{lightController}}
+\doxysubsubsection{\texorpdfstring{getNumberOfLeds()}{getNumberOfLeds()}}
+{\footnotesize\ttfamily const int light\+Controller\+::get\+Number\+Of\+Leds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returning \textquotesingle{}number\+Of\+Leds\textquotesingle{}. 
+
+This function returns the total number of LED\textquotesingle{}s that are used. \mbox{\Hypertarget{classlight_controller_a37499ddf4e47bf56c6bcb4db58bfc1cc}\label{classlight_controller_a37499ddf4e47bf56c6bcb4db58bfc1cc}} 
 \index{lightController@{lightController}!getRed@{getRed}}
 \index{getRed@{getRed}!lightController@{lightController}}
 \doxysubsubsection{\texorpdfstring{getRed()}{getRed()}}
@@ -136,5 +148,5 @@ This function converts an 8 bit integer to an array of boleans.
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{light_controller_8hpp}{light\+Controller.\+hpp}}\item 
-light\+Controller.\+cpp\end{DoxyCompactItemize}
+code/\mbox{\hyperlink{light_controller_8hpp}{light\+Controller.\+hpp}}\item 
+code/light\+Controller.\+cpp\end{DoxyCompactItemize}

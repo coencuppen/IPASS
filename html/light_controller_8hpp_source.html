@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>IPASS: lightController.hpp Source File</title>
+<title>IPASS: code/lightController.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -106,51 +106,55 @@ $(document).ready(function(){initNavTree('light_controller_8hpp_source.html','')
 <div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="classlight_controller.html">   20</a></span>&#160;<span class="keyword">class </span><a class="code" href="classlight_controller.html">lightController</a> {</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">int</span> mode;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">bool</span> *brightness;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">bool</span> *red;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">bool</span> *green;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">bool</span> *blue;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="classlight_controller.html#a7515b95c0e838e8b9e99def0e7c4387a">lightController</a>(<span class="keywordtype">int</span> mode, uint8_t brightness, uint8_t red, uint8_t green, uint8_t blue);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> *<a class="code" href="classlight_controller.html#a4ab389e9caa4f69319f6e69e3dbc3937">setArrayBrightness</a>(uint8_t <span class="keywordtype">byte</span>);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> *<a class="code" href="classlight_controller.html#a58b76432aa3401f4deed8863082045ce">setArrayRed</a>(uint8_t <span class="keywordtype">byte</span>);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> *<a class="code" href="classlight_controller.html#a50d00f241e1e6a59cb12abd609b2cf51">setArrayGreen</a>(uint8_t <span class="keywordtype">byte</span>);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> *<a class="code" href="classlight_controller.html#a6ded9bdd6a76b062cce480f9125771c6">setArrayBlue</a>(uint8_t <span class="keywordtype">byte</span>);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="classlight_controller.html#a4b701715c1d0e1b716a2003b502a8846">getMode</a>();</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">bool</span> *<a class="code" href="classlight_controller.html#a4594804a341195c46d7d9e42bb0fb81c">getBrightness</a>();</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">bool</span> *<a class="code" href="classlight_controller.html#a37499ddf4e47bf56c6bcb4db58bfc1cc">getRed</a>();</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">bool</span> *<a class="code" href="classlight_controller.html#a7841a4bab743419af555c9b666b91f21">getGreen</a>();</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">bool</span> *<a class="code" href="classlight_controller.html#a6771e98bb2f6b0ec5c1e3c6552d3e6b4">getBlue</a>();</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;};</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">int</span> numberOfLeds;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">bool</span> *brightness;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">bool</span> *red;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">bool</span> *green;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">bool</span> *blue;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="classlight_controller.html#a9076da96dfdcfd4cc1a46d36c474d546">lightController</a>(<span class="keywordtype">int</span> mode, <span class="keywordtype">int</span> numberOfLeds, uint8_t brightness, uint8_t red, uint8_t green, uint8_t blue);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> *<a class="code" href="classlight_controller.html#a4ab389e9caa4f69319f6e69e3dbc3937">setArrayBrightness</a>(uint8_t <span class="keywordtype">byte</span>);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> *<a class="code" href="classlight_controller.html#a58b76432aa3401f4deed8863082045ce">setArrayRed</a>(uint8_t <span class="keywordtype">byte</span>);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> *<a class="code" href="classlight_controller.html#a50d00f241e1e6a59cb12abd609b2cf51">setArrayGreen</a>(uint8_t <span class="keywordtype">byte</span>);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> *<a class="code" href="classlight_controller.html#a6ded9bdd6a76b062cce480f9125771c6">setArrayBlue</a>(uint8_t <span class="keywordtype">byte</span>);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="classlight_controller.html#a4b701715c1d0e1b716a2003b502a8846">getMode</a>();</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="classlight_controller.html#acb573720dc87a6ac356a5173f784cc45">getNumberOfLeds</a>();</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">bool</span> *<a class="code" href="classlight_controller.html#a4594804a341195c46d7d9e42bb0fb81c">getBrightness</a>();</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">bool</span> *<a class="code" href="classlight_controller.html#a37499ddf4e47bf56c6bcb4db58bfc1cc">getRed</a>();</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">bool</span> *<a class="code" href="classlight_controller.html#a7841a4bab743419af555c9b666b91f21">getGreen</a>();</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="preprocessor">#endif </span><span class="comment">//V1OOPC_EXAMPLES_LIGHTCONTROLLER_HPP</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">bool</span> *<a class="code" href="classlight_controller.html#a6771e98bb2f6b0ec5c1e3c6552d3e6b4">getBlue</a>();</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;};</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor">#endif </span><span class="comment">//V1OOPC_EXAMPLES_LIGHTCONTROLLER_HPP</span></div>
 <div class="ttc" id="aclasslight_controller_html"><div class="ttname"><a href="classlight_controller.html">lightController</a></div><div class="ttdef"><b>Definition:</b> lightController.hpp:20</div></div>
-<div class="ttc" id="aclasslight_controller_html_a37499ddf4e47bf56c6bcb4db58bfc1cc"><div class="ttname"><a href="classlight_controller.html#a37499ddf4e47bf56c6bcb4db58bfc1cc">lightController::getRed</a></div><div class="ttdeci">const bool * getRed()</div><div class="ttdoc">Returning 'red' from private.</div><div class="ttdef"><b>Definition:</b> lightController.cpp:80</div></div>
-<div class="ttc" id="aclasslight_controller_html_a4594804a341195c46d7d9e42bb0fb81c"><div class="ttname"><a href="classlight_controller.html#a4594804a341195c46d7d9e42bb0fb81c">lightController::getBrightness</a></div><div class="ttdeci">const bool * getBrightness()</div><div class="ttdoc">Returning 'brightness' from private.</div><div class="ttdef"><b>Definition:</b> lightController.cpp:76</div></div>
-<div class="ttc" id="aclasslight_controller_html_a4ab389e9caa4f69319f6e69e3dbc3937"><div class="ttname"><a href="classlight_controller.html#a4ab389e9caa4f69319f6e69e3dbc3937">lightController::setArrayBrightness</a></div><div class="ttdeci">static bool * setArrayBrightness(uint8_t byte)</div><div class="ttdoc">Setting the brightness.</div><div class="ttdef"><b>Definition:</b> lightController.cpp:21</div></div>
-<div class="ttc" id="aclasslight_controller_html_a4b701715c1d0e1b716a2003b502a8846"><div class="ttname"><a href="classlight_controller.html#a4b701715c1d0e1b716a2003b502a8846">lightController::getMode</a></div><div class="ttdeci">const int getMode()</div><div class="ttdoc">Returning 'mode' from private.</div><div class="ttdef"><b>Definition:</b> lightController.cpp:72</div></div>
-<div class="ttc" id="aclasslight_controller_html_a50d00f241e1e6a59cb12abd609b2cf51"><div class="ttname"><a href="classlight_controller.html#a50d00f241e1e6a59cb12abd609b2cf51">lightController::setArrayGreen</a></div><div class="ttdeci">static bool * setArrayGreen(uint8_t byte)</div><div class="ttdoc">Setting the color green.</div><div class="ttdef"><b>Definition:</b> lightController.cpp:48</div></div>
-<div class="ttc" id="aclasslight_controller_html_a58b76432aa3401f4deed8863082045ce"><div class="ttname"><a href="classlight_controller.html#a58b76432aa3401f4deed8863082045ce">lightController::setArrayRed</a></div><div class="ttdeci">static bool * setArrayRed(uint8_t byte)</div><div class="ttdoc">Setting the color red.</div><div class="ttdef"><b>Definition:</b> lightController.cpp:36</div></div>
-<div class="ttc" id="aclasslight_controller_html_a6771e98bb2f6b0ec5c1e3c6552d3e6b4"><div class="ttname"><a href="classlight_controller.html#a6771e98bb2f6b0ec5c1e3c6552d3e6b4">lightController::getBlue</a></div><div class="ttdeci">const bool * getBlue()</div><div class="ttdoc">Returning 'blue' from private.</div><div class="ttdef"><b>Definition:</b> lightController.cpp:88</div></div>
-<div class="ttc" id="aclasslight_controller_html_a6ded9bdd6a76b062cce480f9125771c6"><div class="ttname"><a href="classlight_controller.html#a6ded9bdd6a76b062cce480f9125771c6">lightController::setArrayBlue</a></div><div class="ttdeci">static bool * setArrayBlue(uint8_t byte)</div><div class="ttdoc">Setting the color blue.</div><div class="ttdef"><b>Definition:</b> lightController.cpp:60</div></div>
-<div class="ttc" id="aclasslight_controller_html_a7515b95c0e838e8b9e99def0e7c4387a"><div class="ttname"><a href="classlight_controller.html#a7515b95c0e838e8b9e99def0e7c4387a">lightController::lightController</a></div><div class="ttdeci">lightController(int mode, uint8_t brightness, uint8_t red, uint8_t green, uint8_t blue)</div><div class="ttdoc">Light_controller constructor.</div><div class="ttdef"><b>Definition:</b> lightController.cpp:13</div></div>
-<div class="ttc" id="aclasslight_controller_html_a7841a4bab743419af555c9b666b91f21"><div class="ttname"><a href="classlight_controller.html#a7841a4bab743419af555c9b666b91f21">lightController::getGreen</a></div><div class="ttdeci">const bool * getGreen()</div><div class="ttdoc">Returning 'green' from private.</div><div class="ttdef"><b>Definition:</b> lightController.cpp:84</div></div>
+<div class="ttc" id="aclasslight_controller_html_a37499ddf4e47bf56c6bcb4db58bfc1cc"><div class="ttname"><a href="classlight_controller.html#a37499ddf4e47bf56c6bcb4db58bfc1cc">lightController::getRed</a></div><div class="ttdeci">const bool * getRed()</div><div class="ttdoc">Returning 'red' from private.</div><div class="ttdef"><b>Definition:</b> lightController.cpp:85</div></div>
+<div class="ttc" id="aclasslight_controller_html_a4594804a341195c46d7d9e42bb0fb81c"><div class="ttname"><a href="classlight_controller.html#a4594804a341195c46d7d9e42bb0fb81c">lightController::getBrightness</a></div><div class="ttdeci">const bool * getBrightness()</div><div class="ttdoc">Returning 'brightness' from private.</div><div class="ttdef"><b>Definition:</b> lightController.cpp:81</div></div>
+<div class="ttc" id="aclasslight_controller_html_a4ab389e9caa4f69319f6e69e3dbc3937"><div class="ttname"><a href="classlight_controller.html#a4ab389e9caa4f69319f6e69e3dbc3937">lightController::setArrayBrightness</a></div><div class="ttdeci">static bool * setArrayBrightness(uint8_t byte)</div><div class="ttdoc">Setting the brightness.</div><div class="ttdef"><b>Definition:</b> lightController.cpp:22</div></div>
+<div class="ttc" id="aclasslight_controller_html_a4b701715c1d0e1b716a2003b502a8846"><div class="ttname"><a href="classlight_controller.html#a4b701715c1d0e1b716a2003b502a8846">lightController::getMode</a></div><div class="ttdeci">const int getMode()</div><div class="ttdoc">Returning 'mode' from private.</div><div class="ttdef"><b>Definition:</b> lightController.cpp:73</div></div>
+<div class="ttc" id="aclasslight_controller_html_a50d00f241e1e6a59cb12abd609b2cf51"><div class="ttname"><a href="classlight_controller.html#a50d00f241e1e6a59cb12abd609b2cf51">lightController::setArrayGreen</a></div><div class="ttdeci">static bool * setArrayGreen(uint8_t byte)</div><div class="ttdoc">Setting the color green.</div><div class="ttdef"><b>Definition:</b> lightController.cpp:49</div></div>
+<div class="ttc" id="aclasslight_controller_html_a58b76432aa3401f4deed8863082045ce"><div class="ttname"><a href="classlight_controller.html#a58b76432aa3401f4deed8863082045ce">lightController::setArrayRed</a></div><div class="ttdeci">static bool * setArrayRed(uint8_t byte)</div><div class="ttdoc">Setting the color red.</div><div class="ttdef"><b>Definition:</b> lightController.cpp:37</div></div>
+<div class="ttc" id="aclasslight_controller_html_a6771e98bb2f6b0ec5c1e3c6552d3e6b4"><div class="ttname"><a href="classlight_controller.html#a6771e98bb2f6b0ec5c1e3c6552d3e6b4">lightController::getBlue</a></div><div class="ttdeci">const bool * getBlue()</div><div class="ttdoc">Returning 'blue' from private.</div><div class="ttdef"><b>Definition:</b> lightController.cpp:93</div></div>
+<div class="ttc" id="aclasslight_controller_html_a6ded9bdd6a76b062cce480f9125771c6"><div class="ttname"><a href="classlight_controller.html#a6ded9bdd6a76b062cce480f9125771c6">lightController::setArrayBlue</a></div><div class="ttdeci">static bool * setArrayBlue(uint8_t byte)</div><div class="ttdoc">Setting the color blue.</div><div class="ttdef"><b>Definition:</b> lightController.cpp:61</div></div>
+<div class="ttc" id="aclasslight_controller_html_a7841a4bab743419af555c9b666b91f21"><div class="ttname"><a href="classlight_controller.html#a7841a4bab743419af555c9b666b91f21">lightController::getGreen</a></div><div class="ttdeci">const bool * getGreen()</div><div class="ttdoc">Returning 'green' from private.</div><div class="ttdef"><b>Definition:</b> lightController.cpp:89</div></div>
+<div class="ttc" id="aclasslight_controller_html_a9076da96dfdcfd4cc1a46d36c474d546"><div class="ttname"><a href="classlight_controller.html#a9076da96dfdcfd4cc1a46d36c474d546">lightController::lightController</a></div><div class="ttdeci">lightController(int mode, int numberOfLeds, uint8_t brightness, uint8_t red, uint8_t green, uint8_t blue)</div><div class="ttdoc">Light_controller constructor.</div><div class="ttdef"><b>Definition:</b> lightController.cpp:13</div></div>
+<div class="ttc" id="aclasslight_controller_html_acb573720dc87a6ac356a5173f784cc45"><div class="ttname"><a href="classlight_controller.html#acb573720dc87a6ac356a5173f784cc45">lightController::getNumberOfLeds</a></div><div class="ttdeci">const int getNumberOfLeds()</div><div class="ttdoc">Returning 'numberOfLeds'.</div><div class="ttdef"><b>Definition:</b> lightController.cpp:77</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="light_controller_8hpp.html">lightController.hpp</a></li>
+    <li class="navelem"><a class="el" href="dir_050edd66366d13764f98250ef6db77f6.html">code</a></li><li class="navelem"><a class="el" href="light_controller_8hpp.html">lightController.hpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>

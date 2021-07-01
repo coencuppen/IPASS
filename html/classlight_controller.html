@@ -92,12 +92,15 @@ $(document).ready(function(){initNavTree('classlight_controller.html',''); initR
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a7515b95c0e838e8b9e99def0e7c4387a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlight_controller.html#a7515b95c0e838e8b9e99def0e7c4387a">lightController</a> (int mode, uint8_t brightness, uint8_t red, uint8_t green, uint8_t blue)</td></tr>
-<tr class="memdesc:a7515b95c0e838e8b9e99def0e7c4387a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Light_controller constructor.  <a href="classlight_controller.html#a7515b95c0e838e8b9e99def0e7c4387a">More...</a><br /></td></tr>
-<tr class="separator:a7515b95c0e838e8b9e99def0e7c4387a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9076da96dfdcfd4cc1a46d36c474d546"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlight_controller.html#a9076da96dfdcfd4cc1a46d36c474d546">lightController</a> (int mode, int numberOfLeds, uint8_t brightness, uint8_t red, uint8_t green, uint8_t blue)</td></tr>
+<tr class="memdesc:a9076da96dfdcfd4cc1a46d36c474d546"><td class="mdescLeft">&#160;</td><td class="mdescRight">Light_controller constructor.  <a href="classlight_controller.html#a9076da96dfdcfd4cc1a46d36c474d546">More...</a><br /></td></tr>
+<tr class="separator:a9076da96dfdcfd4cc1a46d36c474d546"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b701715c1d0e1b716a2003b502a8846"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlight_controller.html#a4b701715c1d0e1b716a2003b502a8846">getMode</a> ()</td></tr>
 <tr class="memdesc:a4b701715c1d0e1b716a2003b502a8846"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returning 'mode' from private.  <a href="classlight_controller.html#a4b701715c1d0e1b716a2003b502a8846">More...</a><br /></td></tr>
 <tr class="separator:a4b701715c1d0e1b716a2003b502a8846"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb573720dc87a6ac356a5173f784cc45"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlight_controller.html#acb573720dc87a6ac356a5173f784cc45">getNumberOfLeds</a> ()</td></tr>
+<tr class="memdesc:acb573720dc87a6ac356a5173f784cc45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returning 'numberOfLeds'.  <a href="classlight_controller.html#acb573720dc87a6ac356a5173f784cc45">More...</a><br /></td></tr>
+<tr class="separator:acb573720dc87a6ac356a5173f784cc45"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4594804a341195c46d7d9e42bb0fb81c"><td class="memItemLeft" align="right" valign="top">const bool *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlight_controller.html#a4594804a341195c46d7d9e42bb0fb81c">getBrightness</a> ()</td></tr>
 <tr class="memdesc:a4594804a341195c46d7d9e42bb0fb81c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returning 'brightness' from private.  <a href="classlight_controller.html#a4594804a341195c46d7d9e42bb0fb81c">More...</a><br /></td></tr>
 <tr class="separator:a4594804a341195c46d7d9e42bb0fb81c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -127,8 +130,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a6ded9bdd6a76b062cce480f9125771c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a7515b95c0e838e8b9e99def0e7c4387a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7515b95c0e838e8b9e99def0e7c4387a">&#9670;&nbsp;</a></span>lightController()</h2>
+<a id="a9076da96dfdcfd4cc1a46d36c474d546"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9076da96dfdcfd4cc1a46d36c474d546">&#9670;&nbsp;</a></span>lightController()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -138,6 +141,12 @@ Static Public Member Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>mode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>numberOfLeds</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -254,6 +263,26 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Returning 'mode' from private. </p>
 <p>This function returns 'mode' from private as a const int . </p>
+
+</div>
+</div>
+<a id="acb573720dc87a6ac356a5173f784cc45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb573720dc87a6ac356a5173f784cc45">&#9670;&nbsp;</a></span>getNumberOfLeds()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int lightController::getNumberOfLeds </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returning 'numberOfLeds'. </p>
+<p>This function returns the total number of LED's that are used. </p>
 
 </div>
 </div>
@@ -394,8 +423,8 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li><a class="el" href="light_controller_8hpp_source.html">lightController.hpp</a></li>
-<li>lightController.cpp</li>
+<li>code/<a class="el" href="light_controller_8hpp_source.html">lightController.hpp</a></li>
+<li>code/lightController.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
