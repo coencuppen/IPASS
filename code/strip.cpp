@@ -76,19 +76,19 @@ void strip::ledStrip(int leds) {
             sendBytes(bytes0);
 
             for (int i = 1; i <= leds; ++i) {
-                if (i > 0 && i < (lightSetup.getNumberOfLeds() / 8 * 6)) {
+                if (leds > 0 && leds < (lightSetup.getNumberOfLeds() / 8 * 6)) {
                     sendBytes(lightSetup.getBrightness());
                     sendBytes(bytes0);
                     sendBytes(bytes1);
                     sendBytes(bytes0);
                 }
-                if (i > (lightSetup.getNumberOfLeds() / 8 * 5) && i <= (lightSetup.getNumberOfLeds() / 8 * 7)) {
+                if (leds > (lightSetup.getNumberOfLeds() / 8 * 5) && leds <= (lightSetup.getNumberOfLeds() / 8 * 7)) {
                     sendBytes(lightSetup.getBrightness());
                     sendBytes(bytes0);
                     sendBytes(bytes1);
                     sendBytes(bytes1);
                 }
-                if (i > (lightSetup.getNumberOfLeds() / 8 * 7) && i <= lightSetup.getNumberOfLeds()) {
+                if (leds > (lightSetup.getNumberOfLeds() / 8 * 7) && leds <= lightSetup.getNumberOfLeds()) {
                     sendBytes(lightSetup.getBrightness());
                     sendBytes(bytes0);
                     sendBytes(bytes0);
