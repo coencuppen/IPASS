@@ -20,6 +20,7 @@
 class lightController {
 private:
     int mode;
+    int numberOfLeds;
     bool *brightness;
     bool *red;
     bool *green;
@@ -35,7 +36,7 @@ public:
     /// The colors should be an 8 bit integer in the range of 0 and 255.
     /// Only the 'mode' will be directly added to the private.
     /// The brightness and the colors will first be converted to arrays.
-    lightController(int mode, uint8_t brightness, uint8_t red, uint8_t green, uint8_t blue);
+    lightController(int mode, int numberOfLeds, uint8_t brightness, uint8_t red, uint8_t green, uint8_t blue);
 
     /// \brief
     /// Setting the brightness
@@ -67,6 +68,12 @@ public:
     /// \details
     /// This function returns 'mode' from private as a const int .
     const int getMode();
+
+    /// \brief
+    /// Returning 'numberOfLeds'
+    /// \details
+    /// This function returns the total number of LED's that are used.
+    const int getNumberOfLeds();
 
     /// \brief
     /// Returning 'brightness' from private

@@ -46,19 +46,19 @@ void strip::ledStrip(int leds) {
             sendBytes(bytes0);
 
             for (int i = 1; i <= leds; ++i) {
-                if (i > 0 && i < 6) {
+                if (i > 0 && i < (lightSetup.getNumberOfLeds() / 8 * 6)) {
                     sendBytes(lightSetup.getBrightness());
                     sendBytes(bytes0);
                     sendBytes(bytes1);
                     sendBytes(bytes0);
                 }
-                if (i > 5 && i < 8) {
+                if (i > (lightSetup.getNumberOfLeds() / 8 * 5) && i <= (lightSetup.getNumberOfLeds() / 8 * 7)) {
                     sendBytes(lightSetup.getBrightness());
                     sendBytes(bytes0);
                     sendBytes(bytes1);
                     sendBytes(bytes1);
                 }
-                if (i == 8) {
+                if (i > (lightSetup.getNumberOfLeds() / 8 * 7) && i <= lightSetup.getNumberOfLeds()) {
                     sendBytes(lightSetup.getBrightness());
                     sendBytes(bytes0);
                     sendBytes(bytes0);
@@ -76,19 +76,19 @@ void strip::ledStrip(int leds) {
             sendBytes(bytes0);
 
             for (int i = 1; i <= leds; ++i) {
-                if (leds > 0 && leds < 6) {
+                if (i > 0 && i < (lightSetup.getNumberOfLeds() / 8 * 6)) {
                     sendBytes(lightSetup.getBrightness());
                     sendBytes(bytes0);
                     sendBytes(bytes1);
                     sendBytes(bytes0);
                 }
-                if (leds > 5 && leds < 8) {
+                if (i > (lightSetup.getNumberOfLeds() / 8 * 5) && i <= (lightSetup.getNumberOfLeds() / 8 * 7)) {
                     sendBytes(lightSetup.getBrightness());
                     sendBytes(bytes0);
                     sendBytes(bytes1);
                     sendBytes(bytes1);
                 }
-                if (leds == 8) {
+                if (i > (lightSetup.getNumberOfLeds() / 8 * 7) && i <= lightSetup.getNumberOfLeds()) {
                     sendBytes(lightSetup.getBrightness());
                     sendBytes(bytes0);
                     sendBytes(bytes0);

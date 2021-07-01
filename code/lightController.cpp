@@ -10,8 +10,9 @@
 // ==========================================================================
 #include "lightController.hpp"
 
-lightController::lightController(int mode, uint8_t brightness, uint8_t red, uint8_t green, uint8_t blue) :
+lightController::lightController(int mode, int numberOfLeds, uint8_t brightness, uint8_t red, uint8_t green, uint8_t blue) :
         mode(mode),
+        numberOfLeds(numberOfLeds),
         brightness(setArrayBrightness(brightness)),
         red(setArrayRed(red)),
         green(setArrayGreen(green)),
@@ -71,6 +72,10 @@ bool * lightController::setArrayBlue(uint8_t byte) {
 
 const int lightController::getMode() {
     return mode;
+}
+
+const int lightController::getNumberOfLeds() {
+    return numberOfLeds;
 }
 
 const bool * lightController::getBrightness() {
